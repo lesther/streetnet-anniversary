@@ -1,0 +1,20 @@
+/////////////////////////////
+//header
+.header {
+    padding: 15px 25px;
+	height: $header-height;
+	z-index: 1;
+	position: sticky;
+	top: 0;
+	&--auto {
+		height: auto;
+	}
+}
+
+@each $colorClass, $value in $mixClass-palette {
+	.header_#{$colorClass} {
+        @extend .header;
+		background-color: map-get($value, 'bg');
+		color: map-get($value, 'color');
+	}
+}
