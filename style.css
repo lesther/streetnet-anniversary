@@ -1,0 +1,60 @@
+.bg-color-pink-dark{
+    background-color: #A81D81;
+}
+.text-support{
+    color: #F3D85F;
+}
+.btn-bold{
+    font-weight: bold;
+}
+
+.btn-xs{
+    padding: 5px 10px;
+}
+
+.btn-transparent{
+    background-color: transparent;
+}
+
+.btn-active-light:hover{
+    background-color: #fff;
+}
+
+.btn-active-light:focus{
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+}
+
+.btn-full-width-fluid{
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .btn-full-width-fluid{
+        width: auto;
+    }   
+}
+
+.hero-bg{
+    background-image: url("/images/bg-hero@1x.png");
+    background-size: cover;
+    position: relative;
+}
+
+.hero-bg::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(360deg, rgba(0,0,0,0.87) 0%, rgba(0,0,0,0) 100%);
+}
+
+@media (min-width: 992px){
+    .hero-bg{
+        background-position: center;
+    }
+    .hero-bg::before{
+        background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+    }
+}
