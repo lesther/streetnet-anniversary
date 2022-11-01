@@ -1,6 +1,12 @@
 .bg-color-pink-dark{
     background-color: #A81D81;
 }
+.color-pink-dark{
+    color: #A81D81;
+}
+.bg-color-pink-darker{
+    background-color: #821764;
+}
 .text-support{
     color: #F3D85F;
 }
@@ -50,6 +56,10 @@
     background: linear-gradient(360deg, rgba(0,0,0,0.87) 0%, rgba(0,0,0,0) 100%);
 }
 
+.gap-row{
+    margin-top: 21px;
+}
+
 @media (min-width: 992px){
     .hero-bg{
         background-position: center;
@@ -57,4 +67,32 @@
     .hero-bg::before{
         background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
     }
+}
+
+.link{
+    color: #fff;
+   
+}
+
+/* unvisited link */
+.link:link {
+    color: #fff;
+    text-decoration: underline;
+}
+  
+/* mouse over link */
+.link:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+  
+/* selected link */
+.link:active {
+    text-decoration: none;
+    color: #F3D85F;
+  
+}
+
+.grid-element{
+    padding-bottom: 21px;
 }
